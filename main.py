@@ -14,7 +14,7 @@ async def on_message(message):
         return
         
     prompt = 'why'  # Your bot's prompt
-    headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + 'API_KEY'}
+    headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + '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'}
     data = {'context': prompt, 'max_tokens': 100}  #The max size of the question
     response = requests.post('https://api.aigpt2.com', headers=headers, data=json.dumps(data))
     res_data = response.json()
@@ -23,4 +23,4 @@ async def on_message(message):
         await message.channel.send(bot_message)
        
 
-client.run('YOUR_DISCORD_TOKEN')
+client.run('MTEzOTI1NjkzOTg2MDIwNTYzOA.GjTDfI.g-yaNhPeiu6FV3YO2Lbb_y4pqQuqKNMzRJbSe0')
