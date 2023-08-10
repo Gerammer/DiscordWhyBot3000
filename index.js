@@ -27,4 +27,4 @@ client.on('message', msg => {
     });
 });
 
-client.login('Your Discord Bot Token');
+client.login('MTEzOTI1NjkzOTg2MDIwNTYzOA.Gv5J8Z.zZd2gSKMghIrxeBGD9W62oKMOQhtdGkYUCVIHo');
