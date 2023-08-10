@@ -6,13 +6,16 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
+    print('We have logged in as {0.user}'
+    .format(client))
 
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
-        
+    if message.content.startswith('$hello'):
+        await message.channel.send('Hello.')
+    
     prompt = 'why'  # Your bot's prompt
     headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + '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'}
     data = {'context': prompt, 'max_tokens': 100}  #The max size of the question
