@@ -1,6 +1,7 @@
 import discord
 import requests
 import json
+import os
 
 client = discord.Client()
 
@@ -26,4 +27,4 @@ async def on_message(message):
         await message.channel.send(bot_message)
        
 
-client.run('MTEzOTI1NjkzOTg2MDIwNTYzOA.GjTDfI.g-yaNhPeiu6FV3YO2Lbb_y4pqQuqKNMzRJbSe0')
+client.run(os.getenv('TOKEN'))
