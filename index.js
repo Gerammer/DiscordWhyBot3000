@@ -16,7 +16,7 @@ client.on('message', msg => {
       'context': prompt,
       'max_tokens': 100  // the max size of the question
     }),
-    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + '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' + '527d62d12175703ca72e4e54842b65374d64a95288e400e9968e8243bc556beb'}
+    headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + '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'}
   })
     .then(response => response.json())
     .then(data => {
